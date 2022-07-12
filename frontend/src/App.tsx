@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import Header from './components/Header'
 import NotificationButton from './components/NotificationButton'
+import SalesCard from './components/SalesCard'
 import logo from './logo.svg'
 
 function App() {
@@ -7,8 +9,14 @@ function App() {
 
   return (
     <>
-      <h1>Ola mundo</h1>
-      <NotificationButton/>
+      <Header/>
+      <main>
+      <section id="sales">
+        <div className="dsmeta-container">
+          <SalesCard/>
+        </div>
+      </section>
+      </main>
     </>
     
   )
